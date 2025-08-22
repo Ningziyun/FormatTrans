@@ -11,7 +11,7 @@ import awkward as ak
 import numpy as np
 
 # Read the root files
-with uproot.open("transformerJets(epoch=100)(10k).root") as f:
+with uproot.open("originalJets_qcd.root") as f:
     tree = f["tree"]
     constit_pt = tree["constit_pt"].array(library="ak")
     constit_eta = tree["constit_eta"].array(library="ak")
